@@ -1,0 +1,53 @@
+{
+  "name": "youtube-trends-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ahd-Kabeer-Hadi/youtube-trends-api.git",
+  "homepage": "https://github.com/Ahd-Kabeer-Hadi/youtube-trends-api.git/README.md",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "serve": "node dist/server.js",
+    "dev": "nodemon src/server.ts"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "ts-node src/server.ts"
+  },
+  "keywords": [
+    "youtube",
+    "trends",
+    "api",
+    "google",
+    "express",
+    "SEO",
+    "Tool",
+    "Utility",
+    "wrapper"
+  ],
+  "author": "Ahd-Kabeer-Hadi",
+  "license": "MIT",
+  "description": "TypeScript and ES6 API wrapper for google-trends-api-code, optimized for YouTube SEO.",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "google-trends-api-code": "^4.9.10",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.1.0",
+    "nodemon": "^3.1.4"
+  }
+}
